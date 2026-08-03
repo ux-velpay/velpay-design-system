@@ -1,0 +1,197 @@
+{
+  "space": {
+    "0": {
+      "$value": "0px",
+      "$type": "dimension"
+    },
+    "px": {
+      "$value": "1px",
+      "$type": "dimension"
+    },
+    "0-5": {
+      "$value": "2px",
+      "$type": "dimension"
+    },
+    "1": {
+      "$value": "4px",
+      "$type": "dimension"
+    },
+    "1-5": {
+      "$value": "6px",
+      "$type": "dimension"
+    },
+    "2": {
+      "$value": "8px",
+      "$type": "dimension"
+    },
+    "3": {
+      "$value": "12px",
+      "$type": "dimension"
+    },
+    "4": {
+      "$value": "16px",
+      "$type": "dimension"
+    },
+    "5": {
+      "$value": "20px",
+      "$type": "dimension"
+    },
+    "6": {
+      "$value": "24px",
+      "$type": "dimension"
+    },
+    "7": {
+      "$value": "28px",
+      "$type": "dimension"
+    },
+    "8": {
+      "$value": "32px",
+      "$type": "dimension"
+    },
+    "10": {
+      "$value": "40px",
+      "$type": "dimension"
+    },
+    "12": {
+      "$value": "48px",
+      "$type": "dimension"
+    },
+    "16": {
+      "$value": "64px",
+      "$type": "dimension"
+    },
+    "20": {
+      "$value": "80px",
+      "$type": "dimension"
+    },
+    "24": {
+      "$value": "96px",
+      "$type": "dimension"
+    }
+  },
+  "radius": {
+    "xs": {
+      "$value": "2px",
+      "$type": "dimension"
+    },
+    "sm": {
+      "$value": "4px",
+      "$type": "dimension"
+    },
+    "md": {
+      "$value": "8px",
+      "$type": "dimension"
+    },
+    "lg": {
+      "$value": "12px",
+      "$type": "dimension"
+    },
+    "xl": {
+      "$value": "16px",
+      "$type": "dimension"
+    },
+    "2xl": {
+      "$value": "20px",
+      "$type": "dimension"
+    },
+    "full": {
+      "$value": "9999px",
+      "$type": "dimension"
+    }
+  },
+  "shadow": {
+    "xs": {
+      "$value": "0 1px 2px rgba(0,0,0,0.04)",
+      "$type": "shadow"
+    },
+    "sm": {
+      "$value": "0 1px 2px rgba(0,0,0,0.04), 0 2px 8px rgba(0,0,0,0.06)",
+      "$type": "shadow"
+    },
+    "md": {
+      "$value": "0 2px 4px rgba(0,0,0,0.04), 0 8px 24px rgba(0,0,0,0.08)",
+      "$type": "shadow"
+    },
+    "lg": {
+      "$value": "0 4px 8px rgba(0,0,0,0.04), 0 16px 40px rgba(0,0,0,0.10)",
+      "$type": "shadow"
+    },
+    "xl": {
+      "$value": "0 8px 16px rgba(0,0,0,0.06), 0 24px 48px rgba(0,0,0,0.12)",
+      "$type": "shadow"
+    },
+    "card": {
+      "$value": "0 0 0 1px rgba(0,0,0,0.04), 0 2px 8px rgba(0,0,0,0.04)",
+      "$type": "shadow"
+    },
+    "focus": {
+      "$value": "0 0 0 3px rgba(117,75,241,0.20)",
+      "$type": "shadow",
+      "$description": "CONFLICTO PENDIENTE: Figma muestra rgba(0,0,0,0.20). Sin resolver."
+    }
+  },
+  "z": {
+    "dropdown": {
+      "$value": 100,
+      "$type": "number"
+    },
+    "modal": {
+      "$value": 200,
+      "$type": "number"
+    },
+    "toast": {
+      "$value": 300,
+      "$type": "number"
+    }
+  },
+  "duration": {
+    "fast": {
+      "$value": "120ms",
+      "$type": "duration"
+    },
+    "base": {
+      "$value": "200ms",
+      "$type": "duration"
+    },
+    "slow": {
+      "$value": "300ms",
+      "$type": "duration"
+    }
+  },
+  "easing": {
+    "out": {
+      "$value": "cubic-bezier(0.2, 0, 0, 1)",
+      "$type": "cubicBezier"
+    },
+    "in": {
+      "$value": "cubic-bezier(0.4, 0, 1, 1)",
+      "$type": "cubicBezier"
+    },
+    "in-out": {
+      "$value": "cubic-bezier(0.4, 0, 0.2, 1)",
+      "$type": "cubicBezier"
+    }
+  },
+  "breakpoint": {
+    "sm": {
+      "$value": "640px",
+      "$type": "dimension"
+    },
+    "md": {
+      "$value": "768px",
+      "$type": "dimension"
+    },
+    "lg": {
+      "$value": "1024px",
+      "$type": "dimension"
+    },
+    "xl": {
+      "$value": "1280px",
+      "$type": "dimension"
+    },
+    "2xl": {
+      "$value": "1536px",
+      "$type": "dimension"
+    }
+  }
+}

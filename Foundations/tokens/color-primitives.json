@@ -1,0 +1,118 @@
+{
+  "color": {
+    "neutral": {
+      "0": {
+        "$value": "#FFFFFF",
+        "$type": "color"
+      },
+      "50": {
+        "$value": "#F9FAFB",
+        "$type": "color"
+      },
+      "100": {
+        "$value": "#F3F4F6",
+        "$type": "color"
+      }
+    },
+    "gray": {
+      "50": {
+        "$value": "#E5E7EB",
+        "$type": "color"
+      },
+      "100": {
+        "$value": "#D0D5DD",
+        "$type": "color"
+      },
+      "200": {
+        "$value": "#6B7280",
+        "$type": "color"
+      },
+      "300": {
+        "$value": "#4B5563",
+        "$type": "color"
+      },
+      "400": {
+        "$value": "#374151",
+        "$type": "color"
+      },
+      "500": {
+        "$value": "#111827",
+        "$type": "color"
+      }
+    },
+    "purple": {
+      "50": {
+        "$value": "#F4F3FF",
+        "$type": "color"
+      },
+      "100": {
+        "$value": "#E8E3FB",
+        "$type": "color"
+      },
+      "200": {
+        "$value": "#D1C7F6",
+        "$type": "color"
+      },
+      "300": {
+        "$value": "#B5A4F0",
+        "$type": "color"
+      },
+      "400": {
+        "$value": "#9179EA",
+        "$type": "color"
+      },
+      "500": {
+        "$value": "#754BF1",
+        "$type": "color"
+      },
+      "600": {
+        "$value": "#6844D4",
+        "$type": "color"
+      },
+      "700": {
+        "$value": "#2D006D",
+        "$type": "color"
+      }
+    },
+    "green": {
+      "fg": {
+        "$value": "#027A48",
+        "$type": "color"
+      },
+      "bg": {
+        "$value": "#E8FFF4",
+        "$type": "color"
+      }
+    },
+    "red": {
+      "fg": {
+        "$value": "#991F1F",
+        "$type": "color"
+      },
+      "bg": {
+        "$value": "#FFDFDF",
+        "$type": "color"
+      }
+    },
+    "yellow": {
+      "fg": {
+        "$value": "#8A6500",
+        "$type": "color"
+      },
+      "bg": {
+        "$value": "#FFF7E0",
+        "$type": "color"
+      }
+    },
+    "orange": {
+      "fg": {
+        "$value": "#8B3A00",
+        "$type": "color"
+      },
+      "bg": {
+        "$value": "#FBE7CB",
+        "$type": "color"
+      }
+    }
+  }
+}

@@ -1,0 +1,122 @@
+{
+  "font": {
+    "family": {
+      "$value": "Work Sans",
+      "$type": "fontFamily"
+    },
+    "weight": {
+      "regular": {
+        "$value": 400,
+        "$type": "number"
+      },
+      "medium": {
+        "$value": 500,
+        "$type": "number"
+      },
+      "semibold": {
+        "$value": 600,
+        "$type": "number"
+      },
+      "bold": {
+        "$value": 700,
+        "$type": "number"
+      }
+    },
+    "size": {
+      "11": {
+        "$value": "11px",
+        "$type": "dimension"
+      },
+      "12": {
+        "$value": "12px",
+        "$type": "dimension"
+      },
+      "13": {
+        "$value": "13px",
+        "$type": "dimension"
+      },
+      "14": {
+        "$value": "14px",
+        "$type": "dimension"
+      },
+      "15": {
+        "$value": "15px",
+        "$type": "dimension"
+      },
+      "16": {
+        "$value": "16px",
+        "$type": "dimension"
+      },
+      "17": {
+        "$value": "17px",
+        "$type": "dimension"
+      },
+      "22": {
+        "$value": "22px",
+        "$type": "dimension"
+      },
+      "28": {
+        "$value": "28px",
+        "$type": "dimension"
+      },
+      "36": {
+        "$value": "36px",
+        "$type": "dimension"
+      }
+    },
+    "lineHeight": {
+      "tight": {
+        "$value": 1.15,
+        "$type": "number"
+      },
+      "snug": {
+        "$value": 1.3,
+        "$type": "number"
+      },
+      "normal": {
+        "$value": 1.5,
+        "$type": "number"
+      },
+      "relaxed": {
+        "$value": 1.625,
+        "$type": "number"
+      }
+    },
+    "letterSpacing": {
+      "tighter": {
+        "$value": "-0.04em",
+        "$type": "dimension"
+      },
+      "tight": {
+        "$value": "-0.02em",
+        "$type": "dimension"
+      },
+      "normal": {
+        "$value": "0em",
+        "$type": "dimension"
+      },
+      "wide": {
+        "$value": "0.025em",
+        "$type": "dimension"
+      },
+      "wider": {
+        "$value": "0.05em",
+        "$type": "dimension"
+      },
+      "widest": {
+        "$value": "0.06em",
+        "$type": "dimension"
+      }
+    },
+    "variantNumeric": {
+      "tabular": {
+        "$value": "tabular-nums",
+        "$type": "other"
+      },
+      "normal": {
+        "$value": "normal",
+        "$type": "other"
+      }
+    }
+  }
+}

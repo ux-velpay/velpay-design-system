@@ -1,0 +1,16 @@
+{
+  "name": "velpay-ds-pipeline",
+  "version": "0.1.0",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "extract": "node scripts/extract-figma-tokens.mjs",
+    "build": "style-dictionary build --config style-dictionary.config.mjs",
+    "check:contrast": "node scripts/check-contrast.mjs",
+    "gen:docs": "node scripts/generate-docs.mjs",
+    "sync": "npm run extract && npm run build && npm run check:contrast && npm run gen:docs"
+  },
+  "devDependencies": {
+    "style-dictionary": "^4.3.0"
+  }
+}

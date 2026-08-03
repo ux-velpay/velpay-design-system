@@ -1,0 +1,64 @@
+
+name: figma-sync
+on:
+  workflow_dispatch: {}
+  schedule: [{ cron: "0 6 * * *" }]
+  repository_dispatch:
+    types: [figma-library-publish]   # disparado por el webhook LIBRARY_PUBLISH
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: "20" }
+      - name: Install pipeline deps
+        working-directory: pipeline
+        run: npm ci
+
+      - name: Extract tokens from Figma (Enterprise REST)
+        working-directory: pipeline
+        env:
+          FIGMA_TOKEN: ${{ secrets.FIGMA_TOKEN }}
+          FIGMA_FILE_KEY: ${{ vars.FIGMA_FILE_KEY }}
+        run: npm run extract
+
+      - name: Build tokens (Style Dictionary)
+        working-directory: pipeline
+        run: npm run build
+
+      - name: Contrast gate (WCAG AA) — bloquea si falla
+        working-directory: pipeline
+        run: npm run check:contrast
+
+      - name: Regenerate token docs
+        working-directory: pipeline
+        run: npm run gen:docs
+
+      # Paso agéntico: Claude Code actualiza prose de componentes/notas desde el diff de tokens.
+      # Docs de inputs exactos por versión: https://code.claude.com/docs/en/github-actions
+      - name: Claude — update component & foundation notes
+        uses: anthropics/claude-code-action@v1
+        with:
+          anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
+          prompt: >
+            Los tokens en Foundations/tokens/*.json se actualizaron desde Figma.
+            Sigue las reglas de CLAUDE.md. Actualiza SOLO la prose de notas que dependa de
+            valores cambiados (Components/*, Foundations/Accessibility.md, Changelog.md).
+            No edites archivos generados ni toques valores de token. Resume los cambios.
+
+      - name: Open PR
+        uses: peter-evans/create-pull-request@v6
+        with:
+          branch: chore/figma-token-sync
+          title: "chore: sync design tokens from Figma"
+          commit-message: "chore: sync design tokens from Figma"
+          labels: design-tokens, automated
+          body: |
+            Sync automático desde Figma (LIBRARY_PUBLISH).
+            El gate de contraste ya pasó en CI. Revisar el diff de tokens y notas.

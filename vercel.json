@@ -1,0 +1,10 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "buildCommand": "node pipeline/scripts/generate-preview.mjs",
+  "installCommand": "echo 'sin dependencias: gen:preview usa solo Node built-ins'",
+  "outputDirectory": "_generated",
+  "cleanUrls": true,
+  "rewrites": [
+    { "source": "/", "destination": "/preview.html" }
+  ]
+}

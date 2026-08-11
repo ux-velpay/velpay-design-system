@@ -2,7 +2,7 @@
 // Style Dictionary v4 — build tokens/*.json -> CSS custom properties.
 // Docs: https://styledictionary.com
 export default {
-  source: ["../foundations/tokens/*.json"],
+  source: ["../Foundations/tokens/*.json"], // Casing correcto (F mayúscula) — CI/Linux es case-sensitive.
   platforms: {
     css: {
       transformGroup: "css",

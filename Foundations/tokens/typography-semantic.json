@@ -2,7 +2,7 @@
   "h1": {
     "$value": {
       "fontFamily": "{font.family}",
-      "fontWeight": "{font.weight.bold}",
+      "fontWeight": "{font.weight.medium}",
       "fontSize": "{font.size.36}",
       "letterSpacing": "{font.letterSpacing.tighter}",
       "lineHeight": "{font.lineHeight.tight}"
@@ -12,7 +12,7 @@
   "h2": {
     "$value": {
       "fontFamily": "{font.family}",
-      "fontWeight": "{font.weight.bold}",
+      "fontWeight": "{font.weight.medium}",
       "fontSize": "{font.size.28}",
       "letterSpacing": "{font.letterSpacing.tight}",
       "lineHeight": "{font.lineHeight.tight}"
@@ -22,7 +22,7 @@
   "h3": {
     "$value": {
       "fontFamily": "{font.family}",
-      "fontWeight": "{font.weight.semibold}",
+      "fontWeight": "{font.weight.medium}",
       "fontSize": "{font.size.22}",
       "letterSpacing": "-0.01em",
       "lineHeight": "{font.lineHeight.snug}"
@@ -32,7 +32,7 @@
   "h4": {
     "$value": {
       "fontFamily": "{font.family}",
-      "fontWeight": "{font.weight.semibold}",
+      "fontWeight": "{font.weight.medium}",
       "fontSize": "{font.size.17}",
       "letterSpacing": "{font.letterSpacing.normal}",
       "lineHeight": "{font.lineHeight.snug}"
@@ -83,7 +83,7 @@
     "overline": {
       "$value": {
         "fontFamily": "{font.family}",
-        "fontWeight": "{font.weight.semibold}",
+        "fontWeight": "{font.weight.medium}",
         "fontSize": "{font.size.11}",
         "letterSpacing": "{font.letterSpacing.widest}",
         "lineHeight": "{font.lineHeight.snug}",
@@ -106,7 +106,7 @@
     "badge": {
       "$value": {
         "fontFamily": "{font.family}",
-        "fontWeight": "{font.weight.semibold}",
+        "fontWeight": "{font.weight.medium}",
         "fontSize": "{font.size.11}",
         "letterSpacing": "{font.letterSpacing.wide}",
         "lineHeight": "{font.lineHeight.snug}"

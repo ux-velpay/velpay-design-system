@@ -2,7 +2,11 @@
 name: figma-sync
 on:
   workflow_dispatch: {}
-  schedule: [{ cron: "0 6 * * *" }]
+  # Cron nocturno DESHABILITADO: la sync requiere Figma conectado (FIGMA_TOKEN /
+  # FIGMA_FILE_KEY) y ANTHROPIC_API_KEY, que aún no están configurados. Mientras
+  # tanto la corrida solo fallaba cada noche. Reactivar esta línea cuando se
+  # conecte Figma (ver Governance/Sync Pipeline.md).
+  # schedule: [{ cron: "0 6 * * *" }]
   repository_dispatch:
     types: [figma-library-publish]   # disparado por el webhook LIBRARY_PUBLISH
 
